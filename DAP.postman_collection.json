@@ -1,0 +1,65 @@
+{
+	"info": {
+		"_postman_id": "6390b6ac-ca6d-4f40-942d-60d046bd06a5",
+		"name": "DAP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3625507"
+	},
+	"item": [
+		{
+			"name": "DAP hit ec2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"floor_area_sqm\": 90.0,\n    \"mid_storey\": 11,\n    \"full_flat_type\": \"4 ROOM Model A\",\n    \"commercial\": 0,\n    \"planning_area\": \"Kallang\",\n    \"mall_nearest_distance\": 1094.090418,\n    \"hawker_nearest_distance\": 154.7533573,\n    \"mrt_nearest_distance\": 330.0830689707568,\n    \"mrt_interchange\": 0,\n    \"pri_sch_nearest_distance\": 1138.6334215866475,\n    \"pri_sch_name\": \"Geylang Methodist School\",\n    \"pri_sch_affiliation\": 1,\n    \"sec_sch_nearest_dist\": 1138.6334215866475,\n    \"sec_sch_name\": \"Geylang Methodist School\",\n    \"age_when_sold\": 10\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "workshop(studentnumberhere!).bchwy.com:8080/predict",
+					"host": [
+						"workshop(studentnumberhere!)",
+						"bchwy",
+						"com"
+					],
+					"port": "8080",
+					"path": [
+						"predict"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DAP hit API gateway",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"floor_area_sqm\": 90.0,\n    \"mid_storey\": 11,\n    \"full_flat_type\": \"4 ROOM Model A\",\n    \"commercial\": 0,\n    \"planning_area\": \"Kallang\",\n    \"mall_nearest_distance\": 1094.090418,\n    \"hawker_nearest_distance\": 154.7533573,\n    \"mrt_nearest_distance\": 330.0830689707568,\n    \"mrt_interchange\": 0,\n    \"pri_sch_nearest_distance\": 1138.6334215866475,\n    \"pri_sch_name\": \"Geylang Methodist School\",\n    \"pri_sch_affiliation\": 1,\n    \"sec_sch_nearest_dist\": 1138.6334215866475,\n    \"sec_sch_name\": \"Geylang Methodist School\",\n    \"age_when_sold\": 10\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "(paste-your-API-gateway-endpoint-here)/dap-lambda",
+					"host": [
+						"(paste-your-API-gateway-endpoint-here)"
+					],
+					"path": [
+						"dap-lambda"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
