@@ -8,7 +8,7 @@ with open("models/lr_pipe.pkl", "rb") as file:
     loaded_model = pickle.load(file)
 
 logger = logging.getLogger()
-logger.setLevel("INFO")
+logger.setLevel(logging.INFO)
 
 # Handle CORS
 def generate_cors_response():

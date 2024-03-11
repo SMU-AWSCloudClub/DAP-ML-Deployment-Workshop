@@ -1,8 +1,8 @@
 import axios from "axios";
 
 const instance = axios.create({
-  baseURL: "https://grmwhg8uwi.execute-api.ap-southeast-1.amazonaws.com/default",
-  timeout: 1000,
+  baseURL: "https://2sbwg7kooc.execute-api.ap-southeast-1.amazonaws.com",
+  timeout: 10000,
 });
 
 export default instance;
