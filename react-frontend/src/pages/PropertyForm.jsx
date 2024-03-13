@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import apiClient from "../api/apiClient";
 
 const PropertyForm = () => {
-  const [value, setValue] = useState(null);
+  const [value, setValue] = useState(0);
   const [formData, setFormData] = useState({
     floor_area_sqm: 90.0,
     mid_storey: 11,
